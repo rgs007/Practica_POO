@@ -1,8 +1,17 @@
 #BlueJ class context
 comment0.params=
-comment0.target=Taller()
+comment0.target=taller()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Taller\r\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment1.params=matricula\ tipoDeVehiculo\ cliente
+comment1.target=void\ DarDeAltaVehiculo(java.lang.String,\ TipoDeVehiculo,\ Cliente)
+comment2.params=
+comment2.target=void\ DarDeAltaUsuario()
+comment3.params=mecanico\ vehiculo\ cliente
+comment3.target=void\ DarDeAltaRevision(Mecanico,\ Vehiculo,\ Cliente)
+comment4.params=
+comment4.target=java.util.List\ ObtenerListaVehiculos()
+comment5.params=
+comment5.target=java.util.List\ ObtenerListaClientes()
+comment6.params=mecanico
+comment6.target=Revision\ ObtenerSiguienteRevision(Mecanico)
+numComments=7

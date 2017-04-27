@@ -1,33 +1,88 @@
-
+import java.util.*;
 /**
  * Write a description of class Taller here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Taller
+public class taller
 {
+     
     // instance variables - replace the example below with your own
-    private int x;
-
+    private List<Vehiculo> listaDeVehiculos;
+    private List<Revision> listaDeRevisiones;
+    private List<Cliente> listaDeClientes;
+    private List<Mecanico> listaDeMecanicos;
+    private Comercial comercialDelTaller;
+    private JefeDeTaller JefeDeTaller;
+    
     /**
      * Constructor for objects of class Taller
      */
-    public Taller()
+    public taller()
     {
         // initialise instance variables
-        x = 0;
+        this.listaDeVehiculos = new ArrayList<Vehiculo>();
+        this.listaDeRevisiones = new ArrayList<Revision>();
+        this.listaDeClientes = new ArrayList<Cliente>();
+        this.listaDeMecanicos = new ArrayList<Mecanico>();
+    }
+    void DarDeAltaVehiculo(String matricula, TipoDeVehiculo tipoDeVehiculo, Cliente cliente)
+    {
+        Vehiculo vehiculo = null;
+        switch(tipoDeVehiculo)
+        {
+            case MOTO:
+                vehiculo = new Moto(){ };
+                listaDeVehiculos.add(vehiculo);
+                cliente.agregarVehiculo(vehiculo);
+                break;
+            case COCHE:
+                vehiculo = new Moto(){ };
+                listaDeVehiculos.add(vehiculo);
+                cliente.agregarVehiculo(vehiculo);
+                break;
+            case COCHESP:
+                vehiculo = new Moto(){ };
+                listaDeVehiculos.add(vehiculo);
+                cliente.agregarVehiculo(vehiculo);
+                break;
+            case MOTOSP:
+                vehiculo = new Moto(){ };
+                listaDeVehiculos.add(vehiculo);
+                cliente.agregarVehiculo(vehiculo);
+                break;
+        }
+    }
+    void DarDeAltaUsuario()
+    {
+        
+    }
+    
+    void DarDeAltaRevision(Mecanico mecanico, Vehiculo vehiculo, Cliente cliente)
+    {
+        listaDeRevisiones.add(new Revision(mecanico, vehiculo, cliente));
+        
+    }
+    List<Vehiculo> ObtenerListaVehiculos()
+    {
+        return listaDeVehiculos;
+    }
+    List<Cliente> ObtenerListaClientes()
+    {
+        return listaDeClientes;
+    }
+    
+    Revision ObtenerSiguienteRevision(Mecanico mecanico)
+    {
+        for(Revision revision : listaDeRevisiones)
+        {
+            if(revision.getEstadoRevision() == EstadoRevision.PENDIENTE && revision.getMecanicoAsignado() == mecanico)
+             return revision;
+        }
+        
+        return null;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }

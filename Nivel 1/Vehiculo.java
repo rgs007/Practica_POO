@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 /**
  * Abstract class Vehiculo - write a description of the class here
  * 
@@ -6,18 +9,50 @@
  */
 public abstract class Vehiculo
 {
-    // instance variables - replace the example below with your own
-    int x;
+    protected int numeroDeRuedas;
+    protected boolean esVehiculoDeServicioPublico;
+    protected TipoCombustible tipoDeCombustible;
+    private int kilometros;
+    private Date fechaDeFabricacion;
+    private TipoDeVehiculo tipoDeVehiculo;
+    
+    public int getNumRuedas() {
+        return numeroDeRuedas;
+    }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y    a sample parameter for a method
-     * @return        the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public boolean getEsVehiculoDeServicioPublico() {
+        return esVehiculoDeServicioPublico;
+    }
+    public TipoDeVehiculo getTipoDeVehiculo()
     {
-        // put your code here
-        return x + y;
+        return tipoDeVehiculo;
+    }
+    
+    public TipoCombustible getTipoCombustible()
+    {
+        return tipoDeCombustible;
+    }
+    public void setFechaDeFabricacion(Date value)
+    {
+        fechaDeFabricacion = value;
+    }
+    public Date getFechaFabricacion()
+    {
+        return fechaDeFabricacion;
+    }
+    
+    public void setKilometros(int value)
+    {
+        kilometros = value;
+    }
+    
+    public int getKilometros()
+    {
+        return kilometros;
+    }
+    
+    public List<TareaDeMantenimiento> getTareasDeMantenimiento()
+    {
+        return null;
     }
 }

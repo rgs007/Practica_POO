@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class ColeccionUsuarios here.
+ * Write a description of class JefeDeTaller here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ColeccionUsuarios
+public class JefeDeTaller extends Mecanico
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class ColeccionUsuarios
+     * Constructor for objects of class JefeDeTaller
      */
-    public ColeccionUsuarios()
+    public JefeDeTaller()
     {
         // initialise instance variables
         x = 0;

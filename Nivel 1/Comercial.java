@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class GestorUsuarios here.
+ * Write a description of class Comercial here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GestorUsuarios
+public class Comercial extends Usuario
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class GestorUsuarios
+     * Constructor for objects of class Comercial
      */
-    public GestorUsuarios()
+    public Comercial()
     {
         // initialise instance variables
         x = 0;

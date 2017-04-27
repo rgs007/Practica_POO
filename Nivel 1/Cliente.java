@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class Cliente here.
  * 
@@ -8,26 +8,25 @@
 public class Cliente extends Usuario
 {
     // instance variables - replace the example below with your own
-    private int x;
+   private List<Vehiculo> listaDeVehiculos;
+   private String nif;
 
     /**
      * Constructor for objects of class Cliente
      */
-    public Cliente()
+    public Cliente(String nif)
     {
         // initialise instance variables
-        x = 0;
+       listaDeVehiculos = new ArrayList<Vehiculo>();
+       this.nif = nif;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public void agregarVehiculo(Vehiculo vehiculo)
     {
-        // put your code here
-        return x + y;
+        listaDeVehiculos.add(vehiculo);
+    }
+    public String getNIF()
+    {
+        return nif;
     }
 }

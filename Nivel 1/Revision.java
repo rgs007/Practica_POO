@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class Revision here.
  * 
@@ -8,26 +8,35 @@
 public class Revision
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private Mecanico mecanico;
+    private Vehiculo vehiculo;
+    private Cliente cliente;
+    private List<TareaDeMantenimiento> tareaMantenimiento;
+    private EstadoRevision estadoRevision;
 
     /**
      * Constructor for objects of class Revision
      */
-    public Revision()
+    public Revision(Mecanico mecanico, Vehiculo vehiculo, Cliente cliente)
     {
         // initialise instance variables
-        x = 0;
+        this.mecanico = mecanico;
+        this.vehiculo = vehiculo;
+        this.cliente = cliente;
+        this.tareaMantenimiento = new ArrayList<TareaDeMantenimiento>();
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public EstadoRevision getEstadoRevision()
     {
-        // put your code here
-        return x + y;
+        return estadoRevision;
     }
+    public void setEstadoRevision(EstadoRevision estadoRevision)
+    {
+        this.estadoRevision = estadoRevision;
+    }
+    public Mecanico getMecanicoAsignado()
+    {
+        return mecanico;
+    }
+    
 }
