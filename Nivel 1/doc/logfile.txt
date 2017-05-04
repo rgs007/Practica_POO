@@ -1,6 +1,6 @@
 Class documentation
 <---- javadoc command: ---->
-D:\Projects\uned\bluej317-standalone\BlueJ\jdk\bin\javadoc.exe
+D:\Projects\practicas\POO\bluej317-standalone\BlueJ\jdk\bin\javadoc.exe
 -author
 -version
 -nodeprecated
@@ -12,7 +12,7 @@ D:\Projects\uned\bluej317-standalone\BlueJ\jdk\bin\javadoc.exe
 -source
 1.8
 -classpath
-D:\Projects\uned\bluej317-standalone\BlueJ\lib\bluejcore.jar;D:\Projects\uned\bluej317-standalone\BlueJ\lib\junit-4.8.2.jar;D:\Projects\uned\bluej317-standalone\BlueJ\lib\userlib\pi4j-core.jar;D:\Projects\uned\bluej317-standalone\BlueJ\lib\userlib\pi4j-device.jar;D:\Projects\uned\bluej317-standalone\BlueJ\lib\userlib\pi4j-gpio-extension.jar;D:\Projects\uned\bluej317-standalone\BlueJ\lib\userlib\pi4j-service.jar;D:\Projects\practicas\POO\Practica1\Nivel 1
+D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\bluejcore.jar;D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\junit-4.8.2.jar;D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\userlib\pi4j-core.jar;D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\userlib\pi4j-device.jar;D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\userlib\pi4j-gpio-extension.jar;D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\userlib\pi4j-service.jar;D:\Projects\practicas\POO\Practica1\Nivel 1
 -d
 D:\Projects\practicas\POO\Practica1\Nivel 1\doc
 -encoding
@@ -20,21 +20,16 @@ UTF-8
 -charset
 UTF-8
 -docletpath
-D:\Projects\uned\bluej317-standalone\BlueJ\lib\bjdoclet.jar
+D:\Projects\practicas\POO\bluej317-standalone\BlueJ\lib\bjdoclet.jar
 -doclet
 bluej.doclet.doclets.formats.html.HtmlDoclet
-D:\Projects\practicas\POO\Practica1\Nivel 1\ColeccionVehiculos.java
+D:\Projects\practicas\POO\Practica1\Nivel 1\taller.java
 <---- end of javadoc command ---->
-Loading source file D:\Projects\practicas\POO\Practica1\Nivel 1\ColeccionVehiculos.java...
+Loading source file D:\Projects\practicas\POO\Practica1\Nivel 1\taller.java...
 Constructing Javadoc information...
-D:\Projects\practicas\POO\Practica1\Nivel 1\ColeccionVehiculos.java:11: error: cannot find symbol
-    private ArrayList<Vehiculo> listaDeVehiculos;
-            ^
-  symbol:   class ArrayList
-  location: class ColeccionVehiculos
 Standard Doclet version 1.8.0_40
 Building tree for all the packages and classes...
-Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\ColeccionVehiculos.html...
+Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\taller.html...
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\package-frame.html...
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\package-summary.html...
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\constant-values.html...
@@ -44,4 +39,3 @@ Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\allclasses-frame.html
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\allclasses-noframe.html...
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\index.html...
 Generating D:\Projects\practicas\POO\Practica1\Nivel 1\doc\stylesheet.css...
-1 warning

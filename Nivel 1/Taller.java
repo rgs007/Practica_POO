@@ -27,7 +27,7 @@ public class taller
         this.listaDeClientes = new ArrayList<Cliente>();
         this.listaDeMecanicos = new ArrayList<Mecanico>();
     }
-    void DarDeAltaVehiculo(String matricula, TipoDeVehiculo tipoDeVehiculo, Cliente cliente)
+    Vehiculo darDeAltaVehiculo(String matricula, TipoDeVehiculo tipoDeVehiculo, Cliente cliente)
     {
         Vehiculo vehiculo = null;
         switch(tipoDeVehiculo)
@@ -53,10 +53,13 @@ public class taller
                 cliente.agregarVehiculo(vehiculo);
                 break;
         }
+        cliente.agregarVehiculo(vehiculo);
+        listaDeVehiculos.add(vehiculo);
+        return vehiculo;
     }
-    void DarDeAltaUsuario()
+    void DarDeAltaCliente(String nif)
     {
-        
+        listaDeClientes.add(new Cliente(nif));
     }
     
     void DarDeAltaRevision(Mecanico mecanico, Vehiculo vehiculo, Cliente cliente)
