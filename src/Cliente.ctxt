@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=nombre\ telefono\ nif
+comment0.target=Cliente(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Cliente\r\n
+comment1.params=vehiculo
+comment1.target=void\ agregarVehiculo(Vehiculo)
+comment1.text=\r\n\ Agrega\ un\ veh\u00EDculo\ al\ usuario\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNIF()
+comment2.text=\r\n\ Devuelve\ el\ NIF\r\n
+comment3.params=
+comment3.target=java.util.List\ getListaVehiculos()
+comment3.text=\r\n\ Devuelve\ la\ lista\ de\ veh\u00EDculos\r\n
+numComments=4

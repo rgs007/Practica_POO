@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=vehiculo\ cliente
+comment0.target=Revision(Vehiculo,\ Cliente)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Revision\r\n
+comment1.params=
+comment1.target=Vehiculo\ getVehiculo()
+comment2.params=
+comment2.target=Cliente\ getCliente()
+comment3.params=
+comment3.target=EstadoRevision\ getEstadoRevision()
+comment4.params=estadoRevision
+comment4.target=void\ setEstadoRevision(EstadoRevision)
+comment5.params=mecanico
+comment5.target=void\ setMecanicoAsignado(Mecanico)
+comment6.params=
+comment6.target=Mecanico\ getMecanicoAsignado()
+numComments=7
